@@ -60,8 +60,6 @@ onMounted(async()=>{
       for(var i = event.resultIndex; i < event.results.length; i++){
         newResult = event.results[i][0].transcript
       }
-      console.log('New :', newResult)
-      console.log('Old: ', result.value)
       result.value = cacheResult.value + " " + newResult
       
     }
